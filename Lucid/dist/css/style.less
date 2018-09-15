@@ -1,0 +1,507 @@
+// Шрифты
+@font-face {
+  font-family: 'quicksand-bold';
+  /* Гарнитура шрифта */
+  src: url("../fonts/quicksand-bold.ttf");
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: 'source-sans-pro-bold';
+  /* Гарнитура шрифта */
+  src: url("../fonts/source-sans-pro-bold.ttf");
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: 'source-sans-pro-italic';
+  /* Гарнитура шрифта */
+  src: url("../fonts/source-sans-pro-italic.ttf");
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: 'source-sans-pro-light';
+  /* Гарнитура шрифта */
+  src: url("../fonts/source-sans-pro-light.ttf");
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: 'source-sans-pro-regular';
+  /* Гарнитура шрифта */
+  src: url("../fonts/source-sans-pro-regular.ttf");
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: 'source-sans-pro-semibold';
+  /* Гарнитура шрифта */
+  src: url("../fonts/source-sans-pro-semibold.ttf");
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: 'fontello';
+  /* Гарнитура шрифта */
+  src: url("../fonts/fontello.ttf");
+  /* Путь к файлу со шрифтом */
+}
+// Шрифты
+// Переменные
+// Переменные
+
+body {
+overflow-x: hidden;
+}
+
+.h1,
+h1 {
+  color: #008ed6;
+  text-transform: uppercase;
+  font-family: 'source-sans-pro-bold';
+  font-size: 14px;
+}
+
+h2 {
+  color: #000;
+  font-size: 32px;
+  font-family: 'source-sans-pro-semibold';
+}
+
+.p,
+p {
+  color: #999999;
+  font-size: 18px;
+  font-family: 'source-sans-pro-regular';
+}
+
+span {
+  display: block;
+  font-size: 24px;
+  font-family: 'source-sans-pro-regular';
+  color: #000;
+}
+
+h4 {
+  font-family: 'source-sans-pro-italic';
+  font-size: 24px;
+  color: #fff;
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.btn {
+  .h1;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.btn-info {
+  background: #008ed6;
+  border: 1px solid #008ed6;
+}
+
+hr {
+  height: 0;
+  border: 1px solid #008ed6;
+  width: 4%;
+}
+
+.h2-type-2 {
+  font-size: 44px;
+}
+
+#navbar {
+  h2 {
+    font-size: 44px;
+  }
+
+  .navbar-brand {
+    font-family: 'quicksand-bold';
+    font-size: 24px;
+  }
+
+  small {
+    display: block;
+    font-family: 'source-sans-pro-regular';
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .nav-item {
+    margin-right: 5px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-family: 'source-sans-pro-semibold';
+    color: #fff;
+  }
+
+  .navbar-dark .navbar-nav .active {
+    .nav-link {
+      padding-left: 0;
+      padding-right: 1px;
+    }
+    border-style: solid;
+    border-width: 2px;
+    border-image: url("../img/dashed.png") 2 fill repeat;
+    border-top: none;
+  }
+
+  .navbar-dark .navbar-nav .nav-item {
+    &:hover {
+      border-bottom: 2px solid rgba(72, 237, 23, 0.83);
+      background: rgba(0, 0, 0, 0.45);
+    }
+  }
+}
+
+header {
+  position: relative;
+  top: -62px;
+  transform-style: inherit;
+  //background: url("../img/headerd.jpg") no-repeat top center;
+  background-size: cover;
+  min-height: 40rem;
+}
+
+.elipse {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+}
+
+.cart-fea {
+  padding: 25px;
+
+  &:hover {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: rgba(0, 0, 0, 0.02);
+
+    .elipse {
+      border-color: rgb(251, 166, 0);
+      background: rgba(255, 255, 255, 1);
+    }
+
+    span {
+      color: rgb(251, 166, 0);
+    }
+  }
+}
+
+#about {
+  border: 1px solid #ededed;
+}
+
+.icon-mini {
+  width: 15px;
+}
+
+.comments {
+  background: #f2f2f2;
+
+  p {
+    font-family: 'source-sans-pro-regular';
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  span {
+    font-size: 14px;
+    font-family: 'source-sans-pro-bold';
+    color: #fff;
+    display: inline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.comments {
+  background: url("../img/comments.jpg") no-repeat top center;
+  background-size: cover;
+  height: 40rem;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+#testimonals {
+  background: #f2f2f2;
+}
+
+.carousel-indicators {
+  li {
+    width: 7px;
+    height: 7px;
+    margin-left: 20px;
+    background: none;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+  }
+
+  .active {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.get-started {
+  background: #15141a;
+
+  .h2,
+  h2 {
+    color: #fff;
+    font-size: 36px;
+  }
+
+  h3 {
+    .h2;
+    padding-left: 15px;
+    font-family: 'source-sans-pro-light';
+  }
+
+  .btn {
+    padding: 10px;
+  }
+}
+
+.price-block {
+  .btn {
+    padding: 10px;
+    color: #008ed6;
+  }
+
+  .btn-outline-secondary {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+
+  &:hover {
+    .price {
+      border: 0;
+    }
+
+    .price-head {
+      transition: 0.7s;
+      color: #008ed6;
+    }
+
+    .price {
+      transition: 0.7s;
+      background: #008ed6;
+      color: #fff;
+    }
+
+    .btn {
+      transition: 0.7s;
+      background: unset;
+      color: #008ed6;
+
+      &:hover {
+        background: rgba(8, 173, 255, 0.92);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.price-head {
+  font-size: 24px;
+  font-family: 'source-sans-pro-bold';
+  color: #000;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.price {
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'source-sans-pro-semibold';
+  color: #000;
+}
+
+.price-body {
+  border: 1px solid #e0e0e0;
+}
+
+#contact {
+  background: #f2f2f2;
+
+  .icon {
+    width: 30px;
+  }
+}
+
+#login {
+  .modal-content {
+    background: #15141a;
+  }
+
+  .modal-footer {
+    border: 0;
+  }
+
+  .form-control {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: unset;
+    border: 1px solid #444348;
+  }
+}
+
+footer {
+  background: #15141a;
+
+  .soc {
+    height: 75px;
+  }
+
+  a {
+    color: #3b3a3f;
+    font-size: 24px;
+
+    &:hover {
+      color: #008ed6;
+      transition: 0.2s;
+      font-size: 28px;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    color: #3b3a3f;
+    font-family: 'source-sans-pro-semibold';
+    text-transform: uppercase;
+  }
+}
+/* ================= Стили инфобара о сайте ==================*/
+.info{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+    background: red;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+.info-site{
+line-height: 27px;
+}
+.site-price{
+border-radius: 15px;
+h1{
+font-size: 26px;
+font-family: cursive;
+
+}
+}
+/* ================= Стили инфобара о сайте ==================*/
+// Адаптив
+@media (max-width: 1200px) {
+  .get-started {
+h2,
+h3 {
+  font-size: 26px;
+}
+}
+}
+
+@media (max-width: 992px) {
+  span {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .comments {
+    span {
+      font-size: 10px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .get-started {
+    h2,
+    h3 {
+      font-size: 22px;
+    }
+
+    .btn {
+      font-size: 10px;
+    }
+  }
+
+  .price-head {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 44px;
+  }
+
+  .price-block {
+    p {
+      font-size: 8px;
+    }
+  }
+
+ .p  {
+      font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+ .elipse{
+ width: 43px;
+ height: 43px;
+ }
+ span {
+    font-size: 14px;
+}
+p {
+    font-size: 8px;
+}
+.cart-fea{
+padding: 0px;
+}
+.comments {
+  span {
+    font-size: 5px;
+  }
+
+  p {
+    font-size: 8px;
+  }
+}
+
+.price-head {
+  font-size: 10px;
+}
+
+.price {
+  font-size: 26px;
+}
+
+.price-block {
+  p {
+    font-size: 5px;
+    margin-bottom: 0;
+  }
+  .btn {
+    font-size: 7px;
+  }
+}
+}
+// Адаптив
