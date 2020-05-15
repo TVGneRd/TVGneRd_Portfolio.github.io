@@ -1,0 +1,207 @@
+// Шрифты
+@font-face {
+  font-family: 'Montserrat-Medium';
+  /* Гарнитура шрифта */
+  src: url("../fonts/Montserrat-Medium.ttf");
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  /* Гарнитура шрифта */
+  src: url("../fonts/Montserrat-Bold.ttf");
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  /* Гарнитура шрифта */
+  src: url("../fonts/Montserrat-Regular.ttf");
+  /* Путь к файлу со шрифтом */
+}
+
+// Шрифты
+// Переменные
+// Переменные
+
+::-webkit-scrollbar {
+  width: 15px;
+} 
+::-webkit-scrollbar-track {
+background-color: #F1F1F1;
+} 
+::-webkit-scrollbar-thumb {
+background: #D3ACC3; 
+}
+::-webkit-scrollbar-thumb:hover {	
+  background: rgb(24, 166, 216);
+  background:linear-gradient(62deg,  rgb(197, 32, 76), rgb(193, 67, 54)); // -4 35 -22
+}
+
+body {
+  font-family: "Montserrat-Medium";
+  font-size: 16px;
+  background-image: url("../img/tipa-fresky.svg");
+  background-attachment: fixed;
+  background-position-y: bottom;
+}
+
+.navbar {
+  min-height: 4.5rem;
+
+  .nav-item {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+
+    .nav-link {
+      color: #F1F1F1;
+
+      &.tel {
+        font-size: 1.5rem;
+      }
+     
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+      
+      &:hover, &:focus {
+          color: #F1F1F1;
+          background-size: 100% 2px;
+      }
+    }
+  }
+}
+
+header {
+  position: relative;
+  top: -6rem;
+  transform-style: inherit;
+  background-size: cover;
+  min-height: 45rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    font-size: 4.5rem;
+    line-height: 100%;
+    color: #F1F1F1;
+    font-family: "Montserrat-Bold";
+    margin: 0;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "Montserrat-Regular";
+    margin: 3.5rem 0;
+    color: rgba(241, 241, 241, 0.8);
+
+  }
+
+  .btn-more {
+    padding: .7rem 6rem;
+  }
+}
+
+.cakes {
+  &#cakes{
+    margin-top: -8rem;
+  }
+
+  .card {
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    // transition: .2s;
+
+    // &:hover{
+    //     transform: scale(1.04);
+    //     z-index: 999;
+    // }
+    // transition: transform 0.2s ease;
+    transform: perspective(2000px) rotatey(0deg) rotatex(0deg);
+
+    box-shadow: inset 0 1px 3px black;
+
+    &:hover{
+      cursor: pointer;
+    }
+
+    .card-img-top {
+      border-radius: 0;
+    }
+    
+
+    .card-body {
+      background-color: #D3ACC3;
+      color: #F1F1F1;
+
+      .card-text {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0;
+
+        &.price {
+          font-size: 24px;
+          margin-top: 16px;
+        }
+
+      }
+    }
+
+  }
+}
+
+footer{
+  font-size: 1.1rem;
+  color: rgba(241, 241, 241, 0.8);
+  background: #1A1A1A;
+  font-family: "Montserrat-Regular";
+
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+@media (max-width: 1600px) {
+  header {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .navbar {
+    .nav-item {
+      font-size: .75rem;
+
+      .nav-link {
+        &.tel {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  header {
+    padding-top: 80px;
+    h1 {
+      font-size: 2.5rem;
+
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
